@@ -35,3 +35,5 @@ Nothing but learning projects from htmlacademy, it-kamasutra and other modern te
 
 ## Education:
 I have no professional education in programming, everything is on my own and thanks to the guys from htmlacademy, it-kamasutra, JavaRush, freecodecamp and the authors of the books "You don't know JS", "Grokking Algorithms" and others
+
+## English: A2
