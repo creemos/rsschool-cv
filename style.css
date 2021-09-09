@@ -1,20 +1,44 @@
 body {
     margin: 0;
-    background: aquamarine;
-    padding: 50px 450px;
+    background: black;
+    padding: 100px 450px;
 }
 /* Header */
-header {
-    background-color: azure;
-}
+
 
 .container {
     display: flex;
-    height: 300px;
+    justify-content: space-between;
+    align-items:center;
+    background-color: wheat; 
+    background: url(photo.jpg) no-repeat center;
+    background-size: 100%;
+    height: 250px;
+    margin: 0;
+    filter: grayscale(100%);
+    transition: all ease-in 0.5s;
     
 }
+
+.container .text {
+    border: 1px solid white;
+    font-size: 18px;
+    color: white;
+    background:rgba(132, 165, 160, 0.4) ;
+    width: 230px;
+    height: 130px;
+    margin-bottom: 40px;
+}
+
+.headertext {
+    text-align: center;
+    margin-left: 20px;
+}
+
+
 .contacts {
-    
+    text-align: left;
+    margin-right: 20px;
 }
 
 .contacts > ul {
@@ -25,13 +49,12 @@ header {
 .contacts > ul > li {
         font-size: 24px;
         list-style-type: square;
-        vertical-align: middle;
 }
 
 /* Main */
 main {
     background-color:blueviolet;
-    height: 450px;
+    border: 1px solid blueviolet;
 }
 
 
