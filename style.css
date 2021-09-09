@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: black;
     padding: 100px 450px;
+    font-family: 'Fira Sans', sans-serif;
 }
 /* Header */
 
@@ -71,10 +72,61 @@ body {
 
 /* Main */
 main {
-    background-color:blueviolet;
-    border: 1px solid blueviolet;
+    background-color:white;
+    border: 1px solid white;
 }
 
+.maininfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    gap: 30px;
+}
+
+.aboutme {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.biography {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.biography img {
+    border-radius: 50%;
+}
+
+.secondary {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    gap: 30px;
+}
+
+.skills {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.skills ul {
+    list-style-type: square;
+    margin-right: 10px;
+}
+
+.skills ul li {
+    margin-left: 0;
+}
+
+.code {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.code pre {
+    margin-left: 0;
+    padding-left: 0;
+}
 
 /* Footer */
 
