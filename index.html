@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Aleksey Koltsov</title>
 </head>
 <body>
@@ -17,14 +17,14 @@
                 <h2>Aleksey Koltsov</h2>
                 <h5>Begginer web developer</h5>
             </div>
-            <div class="contacts text">
+            <nav class="contacts text">
                 <ul>
-                    <li><img src="gitlogo.png" alt='git'/><a href="http://github.com/creemos">github.com/creemos</a></li>
-                    <li><img src="telelogo.png" alt='telegram'/><a href="https://t.me/Creemos">t.me/creemos</a></li>
-                    <li><img src="gmaillogo.png" alt='gmail'/><a href="mailto:acreemos@gmail.com">acreemos@gmail.com</a></li>
-                    <li><img src="phonelogo.png" alt='phonelogo'/><a href="tel:+7953702****">+7953702****</a></li>
+                    <li><img src="./images/gitlogo.png" alt='git'/><a href="http://github.com/creemos">github.com/creemos</a></li>
+                    <li><img src="./images/telelogo.png" alt='telegram'/><a href="https://t.me/Creemos">t.me/creemos</a></li>
+                    <li><img src="./images/gmaillogo.png" alt='gmail'/><a href="mailto:acreemos@gmail.com">acreemos@gmail.com</a></li>
+                    <li><img src="./images/phonelogo.png" alt='phonelogo'/><a href="tel:+7953702****">+7953702****</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -64,7 +64,7 @@
                     </h3>
                 </div>
                 <div class="biography">
-                    <img src="aboutme.png" alt="ava">
+                    <img src="./images/aboutme.png" alt="ava">
                     <hr/>
                     <p><b>Aleksey Yu. Koltsov</b></p>
                     <p><b>Date of birth:</b> 23-Feb-1991</p>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="secondary">
-                <div  class="skills">
+                <article  class="skills">
                     <h3>
                         <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
                             <path d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
@@ -87,7 +87,7 @@
                         <li class="skill">Java SE 👣</li>
                         <li class="skill">API handling 👣</li>
                     </ul>
-                </div>
+                </article>
                 <div class="code">
                     <h3>
                         <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/>
@@ -154,7 +154,12 @@ function spinWords(str) {
             2021Q3/Sep-2021
         </div>
         <div class="rsschool">
-            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="schoollogo" width='120px'></a>
+            <a  style="text-decoration: none; color: white; text-align: center;" href="https://rs.school/js/">
+                <figure>
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="schoollogo" width='120px'>
+                    <figcaption>↑ Ссылка на курс ↑</figcaption>
+                </figure>
+            </a>
         </div>
     </footer>
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
