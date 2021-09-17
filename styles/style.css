@@ -1,33 +1,83 @@
 body {
     margin: 0;
     background: black;
-    padding: 20px 450px;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
 /* Header */
 
+header {
+    min-width: 300px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items:center;
-    background-color: wheat; 
+    justify-content: space-around;
+    align-items: center;
+    background-color: wheat;
     background: url(../images/mainphoto.png) no-repeat center;
-    background-size: 100%;
-    height: 250px;
+    min-height: 250px;
+    min-width: 320px;
     margin: 0;
     filter: grayscale(100%);
     transition: all ease-in 0.5s;
-    padding: 10px 20px;
 }
 
 .container .text {
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
     font-size: 18px;
     color: white;
-    background:rgba(132, 165, 160, 0.4) ;
-    width: 230px;
-    margin-bottom: 40px;
+    background: rgba(132, 165, 160, 0.4);
+}
+
+@media (max-width: 320px) {
+
+    .text h1,
+    h2,
+    h3,
+    p {
+        font-size: 50%;
+        padding: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .headertext, .contacts {
+        height: 160px;
+        justify-content: center;
+    }
+    .maininfo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .biography img {
+        width: 100%;
+    }
+    pre {
+        font-size: 7px;
+    }
+    .courses {
+        padding-left: 5px;
+        width: 300px;
+    }
+    .courses svg, .courses img {
+        width: 12px;
+        height: 12px;
+    }
+    .courses li {
+        font-size: 12px;
+    }
+    .skills {
+        font-size: 12px;
+        width: 250px;
+    }
+    footer div {
+        font-size: 12px;
+    }
 }
 
 .headertext {
@@ -35,11 +85,11 @@ body {
     margin-left: 20px;
 }
 
-
 .contacts {
+    display: flex;
+    justify-content: space-evenly;
     text-align: left;
     margin-right: 20px;
-    margin-top: 30px;
     vertical-align: middle;
 }
 
@@ -48,21 +98,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .contacts > ul > li {
+    display: flex;
+    min-width: 150px;
     font-size: 24px;
     list-style-type: none;
-    vertical-align: middle;
 }
-
-
 
 .contacts img {
     width: 22px;
+    height: 22px;
     margin-right: 10px;
-    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .contacts a {
@@ -73,25 +124,29 @@ body {
 
 /* Main */
 main {
-    background-color:white;
+    background-color: white;
     border: 1px solid white;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 .maininfo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 40px;
     gap: 30px;
 }
 
 .aboutme {
+    flex: 4;
     border: 1px dashed black;
     padding: 10px;
 }
 
 .biography {
+    flex: 1;
     border: 1px dashed black;
     padding: 10px;
 }
@@ -103,12 +158,14 @@ main {
 
 .secondary {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 40px;
     gap: 30px;
 }
 
 .skills {
+    flex: 1;
     border: 1px dashed black;
     padding: 10px;
 }
@@ -124,31 +181,31 @@ main {
 }
 
 .code {
+    flex: 1;
     border: 1px dashed black;
     padding: 10px;
 }
 
 .courses {
+    flex: 1;
     border: 1px dashed black;
     padding: 10px;
-    width: 300px;
     font-size: 18px;
-    
-    display: inline-block;
-    text-align: left;   
+    text-align: left;
 }
 
-.courses ul { 
+.courses ul {
     padding: 0;
     margin: 0;
 }
 
-.courses ul li{
+.courses ul li {
     list-style: none;
     margin-bottom: 5px;
 }
 
-.courses svg, img {
+.courses svg,
+img {
     margin-right: 5px;
 }
 
@@ -157,15 +214,26 @@ main {
 footer {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items:center;
-    background-color:cadetblue;
-    height: 100px;
+    align-items: center;
+    background-color: cadetblue;
+    min-height: 100px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.git a, .year {
+.git a,
+.year {
+    margin-top: 10px;
     text-decoration: none;
     font-size: 24px;
     color: white;
 }
 
+.git,
+.year,
+.rsschool {
+    display: flex;
+    flex-wrap: wrap;
+}
