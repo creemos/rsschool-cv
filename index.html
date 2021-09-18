@@ -15,6 +15,18 @@
 <body>
     <header>
         <div class="container">
+            <div class="hamb__menu">
+                <input type="checkbox" id="toggle_hm"/>
+                <label class="hm_btn" for="toggle_hm">
+                    <span></span>
+                </label>
+                <ul class="hm_container">
+                    <li><a class="hm_item" href="#aboutme">About me</a></li>
+                    <li><a class="hm_item" href="#techskills">Tech skills</a></li>
+                    <li><a class="hm_item" href="#code">Code exsample</a></li>
+                    <li><a class="hm_item" href="#courses">Courses</a></li>
+                </ul>
+            </div>
             <div class="headertext text">
                 <h2>Aleksey Koltsov</h2>
                 <h3>Begginer web developer</h3>
@@ -39,7 +51,7 @@
         </div>
     </header>
     <main>
-        <div class="maincontainer">
+        <div id="aboutme" class="maincontainer">
             <div class="maininfo">
                 <div class="aboutme">
                     <h3>
@@ -104,7 +116,7 @@
                 </div>
             </div>
             <div class="secondary">
-                <article class="skills">
+                <article class="skills" id="techskills">
                     <h3>
                         <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 0 24 24" width="24px" fill="#000000">
@@ -134,7 +146,7 @@
                             </svg>
                         Code exsamples:
                     </h3>
-                    <pre class="prettyprint" style="border: none !important;">
+                    <pre id="code" class="prettyprint" style="border: none !important;">
 function spinWords(str) {
     let arrWords = str.split(' ');
     let newStr = []
@@ -154,7 +166,7 @@ function spinWords(str) {
 }
                         </pre>
                 </div>
-                <div class="courses">
+                <div class="courses" id="courses">
                     <h3>
                         <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 0 24 24" width="24px" fill="#000000">

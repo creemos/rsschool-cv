@@ -2,6 +2,7 @@ body {
     margin: 0;
     background: black;
     font-family: "Fira Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 /* Header */
 
@@ -11,6 +12,79 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+#toggle_hm {
+    opacity: 0;
+}
+.hamb__menu {
+    display: none;
+}
+.hm_container {
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(169, 159, 159);
+    opacity: 0.8;
+    padding: 0;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.hm_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.hm_btn {
+    visibility: hidden;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+.hm_btn > span,
+.hm_btn > span::before,
+.hm_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+.hm_btn > span::before {
+    content: "";
+    top: -8px;
+}
+.hm_btn > span::after {
+    content: "";
+    top: 8px;
+}
+#toggle_hm:checked ~ .hm_btn > span {
+    transform: rotate(45deg);
+}
+#toggle_hm:checked ~ .hm_btn > span::before {
+    transform: rotate(0);
+    top: 0;
+}
+#toggle_hm:checked ~ .hm_btn > span::after {
+    transform: rotate(90deg);
+    top: 0;
+}
+#toggle_hm:checked ~ .hm_container {
+    visibility: visible;
+    top: 0;
+}
 
 .container {
     display: flex;
@@ -19,7 +93,7 @@ header {
     background-color: wheat;
     background: url(../images/mainphoto.png) no-repeat center;
     min-height: 250px;
-    min-width: 320px;
+    min-width: 300px;
     height: 330px;
     margin: 0;
     filter: grayscale(100%);
@@ -36,17 +110,26 @@ header {
 }
 
 @media (max-width: 767px) {
-
     .text h1,
-    h2,
-    h3,
-    p {
+    .text h2,
+    .text h3,
+    .text p {
         font-size: 50%;
         padding: 5px;
         margin-top: 0;
         margin-bottom: 0;
     }
-    .headertext, .contacts {
+    h3 {
+        font-size: 16px;
+    }
+    .hamb__menu {
+        display: block;
+    }
+    .hm_btn {
+        visibility: visible;
+    }
+    .headertext,
+    .contacts {
         height: 160px;
         justify-content: center;
     }
@@ -63,7 +146,6 @@ header {
         margin: auto;
     }
     .biography img {
-        
         width: 50%;
     }
     pre {
@@ -73,7 +155,8 @@ header {
         padding-left: 5px;
         width: 300px;
     }
-    .courses svg, .courses img {
+    .courses svg,
+    .courses img {
         width: 12px;
         height: 12px;
     }
@@ -83,6 +166,9 @@ header {
     .skills {
         font-size: 12px;
         width: 250px;
+    }
+    .skills li {
+        font-size: 12px;
     }
     footer div {
         font-size: 12px;
